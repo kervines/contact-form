@@ -5,14 +5,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Contact form</title>
 </head>
 
 <body>
 
-  Contact Us
+  <h2>Contact Us</h2>
+  <form action="">
+    <div class="input-form first-name">
+      <label for="first-name">Fisrt Name *</label>
+      <input type="text" id="first-name">
+    </div>
+    <div class="input-form last-name">
+      <label for="last-name">Last Name *</label>
+      <input type="text" id="last-name">
+    </div>
+    <div class="input-form email">
+      <label for="email">Email Address *</label>
+      <input type="email" id="email">
+    </div>
+    <div class="input-form query">
+      <label for="query">Query Type *</label>
+      <input type="radio" name="query" checked>
+      <input type="radio" name="query">
+    </div>
+    <div class="input-form message">
+      <label for="msg">Message *</label>
+      <textarea name="" id=""></textarea>
+    </div>
 
-  First Name
+    <div class="check">
+      <input type="checkbox" id="check">
+      <label for="check">I consent to being contacted by the team *</label>
+    </div>
+
+    <input type="button" value="Submit">
+  </form>
+
+  <!-- First Name
   This field is required
 
   Last Name
@@ -36,11 +67,7 @@
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-
-  <div class="attribution">
-
-  </div>
+  Thanks for completing the form. We'll be in touch soon! -->
 </body>
 
 </html>
