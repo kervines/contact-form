@@ -12,7 +12,7 @@
   --grey500: hsl(186, 15%, 59%);
   --grey900: hsl(187, 24%, 22%);
 
-  --border-radius: 10px;
+  --border-radius: 5px;
 }
 
 * {
@@ -26,7 +26,8 @@ html {
 }
 
 body {
-  height: 100vh;
+  width: 100%;
+  padding: 40px;
   display: grid;
   place-content: center;
   background-color: var(--green200);
@@ -35,13 +36,11 @@ body {
 form {
   background-color: var(--white);
   padding: 40px;
-  display: grid;
   display: flex;
   flex-direction: column;
-  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  /* height: 775px; */
   width: 734px;
+  border-radius: var(--border-radius);
 }
 
 input {
@@ -55,8 +54,11 @@ label {
   margin: 15px 0;
 }
 
+.start {
+  color: var(--green600);
+}
+
 .title-form {
-  grid-column: 1/-1;
   font-weight: bold;
 }
 
@@ -69,14 +71,6 @@ label {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.email-form {
-  grid-column: 1/-1;
-}
-
-.query-form {
-  grid-column: 1/-1;
 }
 
 .container-query {
@@ -93,10 +87,17 @@ label {
 .message-form textarea {
   resize: none;
   border: 1px solid var(--grey500);
+  padding: 10px;
 }
 
 .check-form {
   margin: 20px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.check-form input {
+  width: 20px;
 }
 
 .message-form textarea,
@@ -110,4 +111,24 @@ input[type='button'] {
   color: var(--white);
   font-family: 'Karla', sans-serif;
   font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  form {
+    width: auto;
+    padding: 20px;
+  }
+
+  .container-input {
+    flex-direction: column;
+  }
+
+  .container-query {
+    grid-template-columns: 1fr;
+  }
+
+  .message-form textarea {
+    height: 200px;
+  }
 }
