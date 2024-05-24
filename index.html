@@ -10,32 +10,41 @@
 </head>
 
 <body>
-
-  <h2>Contact Us</h2>
   <form action="">
-    <div class="input-form first-name">
-      <label for="first-name">Fisrt Name *</label>
-      <input type="text" id="first-name">
+    <h2 class="title-form">Contact Us</h2>
+    <div class='container-input'>
+      <div class="input-form first-name">
+        <label for="first-name">Fisrt Name *</label>
+        <input type="text" id="first-name">
+      </div>
+      <div class="input-form last-name">
+        <label for="last-name">Last Name *</label>
+        <input type="text" id="last-name">
+      </div>
     </div>
-    <div class="input-form last-name">
-      <label for="last-name">Last Name *</label>
-      <input type="text" id="last-name">
-    </div>
-    <div class="input-form email">
+    <div class="input-form email-form">
       <label for="email">Email Address *</label>
       <input type="email" id="email">
     </div>
-    <div class="input-form query">
+    <div class="input-form query-form">
       <label for="query">Query Type *</label>
-      <input type="radio" name="query" checked>
-      <input type="radio" name="query">
+      <div class="container-query">
+        <div>
+          <input type="radio" name="query" id="general" checked>
+          <label for="general">General Enquiry</label>
+        </div>
+        <div>
+          <input type="radio" name="query" id="support">
+          <label for="support">Support Request</label>
+        </div>
+      </div>
     </div>
-    <div class="input-form message">
+    <div class="input-form message-form">
       <label for="msg">Message *</label>
-      <textarea name="" id=""></textarea>
+      <textarea name="" id="" rows="5"></textarea>
     </div>
 
-    <div class="check">
+    <div class="check-form">
       <input type="checkbox" id="check">
       <label for="check">I consent to being contacted by the team *</label>
     </div>
