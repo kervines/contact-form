@@ -17,15 +17,18 @@
       <div class="input-form first-name">
         <label for="first-name">Fisrt Name <span class='start'>*<span></label>
         <input type="text" id="first-name">
+        <p class="msg-required">This field is required</p>
       </div>
       <div class="input-form last-name">
         <label for="last-name">Last Name <span class='start'>*<span></label>
         <input type="text" id="last-name">
+        <p class="msg-required">This field is required</p>
       </div>
     </div>
     <div class="input-form email-form">
       <label for="email">Email Address <span class='start'>*<span></label>
       <input required type="email" id="email">
+      <p class="msg-required">Please enter a valid email address</p>
     </div>
     <div class="input-form query-form">
       <label for="query">Query Type <span class='start'>*<span></label>
@@ -38,18 +41,22 @@
           <input type="radio" name="query" id="support">
           <label for="support">Support Request</label>
         </div>
+        <p class="msg-required">Please select a query type</p>
       </div>
     </div>
     <div class="input-form message-form">
       <label for="msg">Message <span class='start'>*<span></label>
       <textarea name="" id="" rows="5"></textarea>
+      <p class="msg-required">This field is required</p>
     </div>
 
     <div class="check-form">
-      <input type="checkbox" id="check">
-      <label for="check">I consent to being contacted by the team <span class='start'>*<span></label>
+      <div>
+        <input type="checkbox" id="check">
+        <label for="check">I consent to being contacted by the team <span class='start'>*<span></label>
+      </div>
+      <p class="msg-required">To submit this form, please consent to being contacted</p>
     </div>
-
     <input type="button" value="Submit">
   </form>
 
