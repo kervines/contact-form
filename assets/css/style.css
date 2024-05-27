@@ -96,11 +96,17 @@ label {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
+}
+
+.check-form div {
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
 
 .check-form input {
-  width: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .message-form textarea,
@@ -122,7 +128,7 @@ input[type='button'] {
 }
 .msg-required {
   color: var(--alert);
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 @media (max-width: 720px) {
