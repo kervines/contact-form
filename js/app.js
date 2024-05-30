@@ -25,7 +25,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputFName.classList.remove('bd-red');
-        }, 2000);
+        }, 5000);
       }
     }
 
@@ -36,7 +36,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputLName.classList.remove('bd-red');
-        }, 2000);
+        }, 5000);
       }
     }
 
@@ -47,7 +47,36 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputEmail.classList.remove('bd-red');
-        }, 2000);
+        }, 5000);
+      }
+    }
+
+    if (!inputRadio1.checked && !inputRadio2.checked) {
+      if (msg.dataset.info === 'query') {
+        msg.classList.remove('display-none');
+        setTimeout(() => {
+          msg.classList.add('display-none');
+        }, 5000);
+      }
+    }
+
+    if (inputTextArea.value === '') {
+      if (msg.dataset.info === inputTextArea.className) {
+        msg.classList.remove('display-none');
+        inputTextArea.classList.add('bd-red');
+        setTimeout(() => {
+          msg.classList.add('display-none');
+          inputTextArea.classList.remove('bd-red');
+        }, 5000);
+      }
+    }
+
+    if (!inputCheckBox.checked) {
+      if (msg.dataset.info === inputCheckBox.className) {
+        msg.classList.remove('display-none');
+        setTimeout(() => {
+          msg.classList.add('display-none');
+        }, 5000);
       }
     }
   });
