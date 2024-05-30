@@ -16,75 +16,50 @@
     <div class='container-input'>
       <div class="input-form first-name">
         <label for="first-name">Fisrt Name <span class='start'>*<span></label>
-        <input type="text" id="first-name">
-        <p class="msg-required">This field is required</p>
+        <input type="text" id="first-name" class="fname">
+        <p data-info="fname" class="msg-required display-none">This field is required</p>
       </div>
       <div class="input-form last-name">
         <label for="last-name">Last Name <span class='start'>*<span></label>
-        <input type="text" id="last-name">
-        <p class="msg-required">This field is required</p>
+        <input type="text" id="last-name" class="lname">
+        <p data-info="lname" class="msg-required display-none">This field is required</p>
       </div>
     </div>
     <div class="input-form email-form">
       <label for="email">Email Address <span class='start'>*<span></label>
-      <input required type="email" id="email">
-      <p class="msg-required">Please enter a valid email address</p>
+      <input type="email" id="email" class="email">
+      <p data-info="email" class="msg-required display-none">Please enter a valid email address</p>
     </div>
     <div class="input-form query-form">
       <label for="query">Query Type <span class='start'>*<span></label>
       <div class="container-query">
         <div>
-          <input type="radio" name="query" id="general">
+          <input type="radio" name="query" id="general" class="query1">
           <label for="general">General Enquiry</label>
         </div>
         <div>
-          <input type="radio" name="query" id="support">
+          <input type="radio" name="query" id="support" class="query2">
           <label for="support">Support Request</label>
         </div>
-        <p class="msg-required">Please select a query type</p>
+        <p data-info="query" class="msg-required display-none">Please select a query type</p>
       </div>
     </div>
     <div class="input-form message-form">
       <label for="msg">Message <span class='start'>*<span></label>
-      <textarea name="" id="" rows="5"></textarea>
-      <p class="msg-required">This field is required</p>
+      <textarea name="" id="" rows="5" class="msg"></textarea>
+      <p data-info="msg" class="msg-required display-none">This field is required</p>
     </div>
 
     <div class="check-form">
       <div>
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" class="checkbox">
         <label for="check">I consent to being contacted by the team <span class='start'>*<span></label>
       </div>
-      <p class="msg-required">To submit this form, please consent to being contacted</p>
+      <p data-info="checkbox" class="msg-required display-none">To submit this form, please consent to being contacted</p>
     </div>
     <input type="button" value="Submit">
   </form>
 
-  <!-- First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
 </body>
 
 </html>

@@ -124,11 +124,14 @@ input[type='button'] {
 }
 
 .bd-red {
-  border-color: var(--alert);
+  border-color: var(--alert) !important;
 }
 .msg-required {
   color: var(--alert);
   padding-top: 5px;
+}
+.display-none {
+  display: none;
 }
 
 @media (max-width: 720px) {
