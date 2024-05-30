@@ -154,7 +154,7 @@ input[type='button'] {
   padding-top: 5px;
 }
 .display-none {
-  /* display: none; */
+  display: none;
 }
 
 @media (max-width: 720px) {
