@@ -127,9 +127,11 @@ label {
   gap: 15px;
 }
 
-.check-form input {
-  width: 15px;
-  height: 15px;
+.check-form input,
+input[type='radio'] {
+  accent-color: var(--green600);
+  width: 18px;
+  height: 18px;
 }
 
 .message-form textarea,
@@ -156,6 +158,8 @@ input[type='button'] {
 .display-none {
   display: none;
 }
+
+/* Estilização do checkbox */
 
 @media (max-width: 720px) {
   form {
