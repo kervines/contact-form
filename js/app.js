@@ -16,6 +16,18 @@ const validationEmail = () => {
   return regex.test(email);
 };
 
+// Modal
+const modal = document.querySelector('.modal');
+const modalAnimation = () => {
+  modal.style.transform = 'translate3d(-50%, 0px, 0)';
+  modal.style.opacity = 1;
+
+  setTimeout(() => {
+    modal.style.transform = 'translate3d(-50%, -50px, 0)';
+    modal.style.opacity = 0;
+  }, 2500);
+};
+
 const validation = () => {
   msgRequired.forEach((msg) => {
     if (inputFName.value === '') {
@@ -25,7 +37,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputFName.classList.remove('bd-red');
-        }, 5000);
+        }, 2500);
       }
     }
 
@@ -36,7 +48,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputLName.classList.remove('bd-red');
-        }, 5000);
+        }, 2500);
       }
     }
 
@@ -47,7 +59,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputEmail.classList.remove('bd-red');
-        }, 5000);
+        }, 2500);
       }
     }
 
@@ -56,7 +68,7 @@ const validation = () => {
         msg.classList.remove('display-none');
         setTimeout(() => {
           msg.classList.add('display-none');
-        }, 5000);
+        }, 2500);
       }
     }
 
@@ -67,7 +79,7 @@ const validation = () => {
         setTimeout(() => {
           msg.classList.add('display-none');
           inputTextArea.classList.remove('bd-red');
-        }, 5000);
+        }, 2500);
       }
     }
 
@@ -76,8 +88,20 @@ const validation = () => {
         msg.classList.remove('display-none');
         setTimeout(() => {
           msg.classList.add('display-none');
-        }, 5000);
+        }, 2500);
       }
+    }
+
+    if (
+      inputCheckBox.checked &&
+      !!inputTextArea.value &&
+      (inputRadio1.checked || inputRadio2.checked) &&
+      !!inputEmail.value &&
+      validationEmail() &&
+      !!inputLName.value &&
+      !!inputFName.value
+    ) {
+      modalAnimation();
     }
   });
 };
